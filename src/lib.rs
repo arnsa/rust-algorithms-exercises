@@ -7,3 +7,4 @@ pub mod nested_add;
 pub mod factorial;
 pub mod binary_search;
 pub mod array_list;
+pub mod linked_list;
