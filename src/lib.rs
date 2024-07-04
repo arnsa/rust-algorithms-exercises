@@ -5,3 +5,4 @@ pub mod quick_sort;
 pub mod radix_sort;
 pub mod nested_add;
 pub mod factorial;
+pub mod binary_search;
