@@ -1,3 +1,12 @@
+/// Bubble sort algorithm implementation
+///
+/// # Example
+/// ```
+/// let mut nums = Vec::from([1, 3, 2, 5, 4]);
+///
+/// algorithms_exercises::bubble_sort::bubble_sort(&mut nums);
+/// assert_eq!(nums, Vec::from([1, 2, 3, 4, 5]));
+/// ```
 pub fn bubble_sort<T>(arr: &mut Vec<T>)
 where
     T: PartialOrd
