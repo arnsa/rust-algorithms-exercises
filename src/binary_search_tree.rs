@@ -1,4 +1,3 @@
-use std::{cmp::Ordering, fmt::Debug};
 /// Binary search tree implementation
 ///
 /// # Example
@@ -7,6 +6,7 @@ use std::{cmp::Ordering, fmt::Debug};
 /// assert_eq!(binary_search_tree.root.as_ref().unwrap().value, 1);
 /// assert_eq!(binary_search_tree.find(&3), true);
 /// ```
+use std::{cmp::Ordering, fmt::Debug};
 
 #[derive(Debug, Clone)]
 pub struct Node<T> {
