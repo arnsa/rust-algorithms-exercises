@@ -6,16 +6,15 @@
 /// assert_eq!(binary_search_tree.root.as_ref().unwrap().value, 1);
 /// assert_eq!(binary_search_tree.find(&3), true);
 /// ```
-use std::{cmp::Ordering, fmt::Debug};
+use std::cmp::Ordering;
 
-#[derive(Debug, Clone)]
 pub struct Node<T> {
     pub value: T,
     left: Option<Box<Node<T>>>,
     right: Option<Box<Node<T>>>,
 }
 
-impl<T: Ord + Clone + Debug> Node<T> {
+impl<T> Node<T> {
     fn new(value: T) -> Self {
         return Self {
             value,
@@ -25,12 +24,11 @@ impl<T: Ord + Clone + Debug> Node<T> {
     }
 }
 
-#[derive(Debug)]
 pub struct BinarySearchTree<T> {
     pub root: Option<Box<Node<T>>>
 }
 
-impl<T: Ord + Clone + Debug> BinarySearchTree<T> {
+impl<T: Ord> BinarySearchTree<T> {
     pub fn new(values: Vec<T>) -> Self {
         let mut result = Self {
             root: None
